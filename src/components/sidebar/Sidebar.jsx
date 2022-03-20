@@ -12,6 +12,8 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report,
+  Category,
+  FileCopy
 } from "@material-ui/icons";
 import "./sidebar.css"
 
@@ -49,16 +51,20 @@ export default function Sidebar() {
             Users
           </li>
           <li className="sidebarListItem">
+            <Category  className='sidebarIcon' />
+            Category
+          </li>
+          <li className="sidebarListItem">
             <Storefront  className='sidebarIcon' />
-            Products
+            Product
+          </li>
+          <li className="sidebarListItem">
+            <FileCopy  className='sidebarIcon' />
+            order
           </li>
           <li className="sidebarListItem">
             <AttachMoney  className='sidebarIcon' />
             Transaction
-          </li>
-          <li className="sidebarListItem">
-            <TrendingUp  className='sidebarIcon' />
-            Reports
           </li>
         </ul>
 

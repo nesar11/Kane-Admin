@@ -7,7 +7,7 @@ export default function Topbar() {
       <div className="topbarWrapper">
           <div className="topLeft">
               <span className="logo">
-                  Rane admin
+                <img src="logo.PNG" alt="logo" />
               </span>
           </div>
           <div className="topRight">
