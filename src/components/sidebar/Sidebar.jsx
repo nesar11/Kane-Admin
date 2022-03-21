@@ -13,7 +13,9 @@ import {
   WorkOutline,
   Report,
   Category,
-  FileCopy
+  FileCopy,
+  Restaurant
+  
 } from "@material-ui/icons";
 import "./sidebar.css"
 
@@ -47,8 +49,12 @@ export default function Sidebar() {
         
           <h3 className="sidebarTitle">Quick Menu</h3>
           <li className="sidebarListItem ">
-            <LineStyle className='sidebarIcon'/>
-            Users
+            <Storefront className='sidebarIcon'/>
+            Outlet
+          </li>
+          <li className="sidebarListItem">
+            <Restaurant  className='sidebarIcon' />
+            Table
           </li>
           <li className="sidebarListItem">
             <Category  className='sidebarIcon' />
@@ -80,10 +86,7 @@ export default function Sidebar() {
             <DynamicFeed   className='sidebarIcon' />
             Feedback
           </li>
-          <li className="sidebarListItem">
-            <ChatBubbleOutline   className='sidebarIcon' />
-            Messages
-          </li>
+
         </ul>
 
       </div>
@@ -93,6 +96,10 @@ export default function Sidebar() {
           <li className="sidebarListItem">
             <WorkOutline  className='sidebarIcon'/>
             Manage
+          </li>
+          <li className="sidebarListItem ">
+            <LineStyle className='sidebarIcon'/>
+            Users
           </li>
           <li className="sidebarListItem">
             <Timeline  className='sidebarIcon' />
