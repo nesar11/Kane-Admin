@@ -1,15 +1,13 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 import {
   LineStyle,
   Timeline,
   TrendingUp,
-  PermIdentity,
   Storefront,
   AttachMoney,
-  BarChart,
   MailOutline,
   DynamicFeed,
-  ChatBubbleOutline,
   WorkOutline,
   Report,
   Category,
@@ -28,10 +26,13 @@ export default function Sidebar() {
 
         
           <h3 className="sidebarTitle">Dashboard</h3>
+          <Link to="/">
           <li className="sidebarListItem active">
             <LineStyle className='sidebarIcon'/>
             Home
           </li>
+          </Link>
+
           <li className="sidebarListItem">
             <Timeline  className='sidebarIcon' />
             Analytics
@@ -97,10 +98,14 @@ export default function Sidebar() {
             <WorkOutline  className='sidebarIcon'/>
             Manage
           </li>
+          <Link  to="/users">
           <li className="sidebarListItem ">
             <LineStyle className='sidebarIcon'/>
             Users
+            
           </li>
+          </Link>
+
           <li className="sidebarListItem">
             <Timeline  className='sidebarIcon' />
             Analytics
