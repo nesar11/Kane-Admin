@@ -26,7 +26,7 @@ export default function Sidebar() {
 
         
           <h3 className="sidebarTitle">Dashboard</h3>
-          <Link to="/">
+          <Link to="/" className='link'>
           <li className="sidebarListItem active">
             <LineStyle className='sidebarIcon'/>
             Home
@@ -98,7 +98,7 @@ export default function Sidebar() {
             <WorkOutline  className='sidebarIcon'/>
             Manage
           </li>
-          <Link  to="/users">
+          <Link  to="/users" className='link'>
           <li className="sidebarListItem ">
             <LineStyle className='sidebarIcon'/>
             Users
