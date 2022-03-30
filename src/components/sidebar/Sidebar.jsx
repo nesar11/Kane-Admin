@@ -61,10 +61,12 @@ export default function Sidebar() {
             <Category  className='sidebarIcon' />
             Category
           </li>
+          <Link  to="/products" className='link'> 
           <li className="sidebarListItem">
             <Storefront  className='sidebarIcon' />
             Product
-          </li>
+          </li></Link>
+
           <li className="sidebarListItem">
             <FileCopy  className='sidebarIcon' />
             order
